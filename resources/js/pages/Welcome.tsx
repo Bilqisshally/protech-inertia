@@ -10,7 +10,7 @@ interface Props {
 
 // Extending Inertia's PageProps
 type PageProps = Props & {
-    [key: string]: any;
+    [key: string]: unknown;
 };
 
 // Komponen SVG Laravel, warnanya diubah menjadi biru

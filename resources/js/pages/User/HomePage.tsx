@@ -23,7 +23,7 @@ const HomePage: React.FC = () => { // 2. Tambahkan tipe React.FC
   ];
 
   // 4. Terapkan tipe number pada state (praktik yang baik)
-  const [page, setPage] = useState<number>(0);
+  const [page] = useState (1);
   const perPage = 5;
   const start = page * perPage;
   const visibleProducts = products.slice(start, start + perPage);

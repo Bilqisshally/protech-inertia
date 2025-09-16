@@ -1,11 +1,17 @@
+type RouteParams =
+    | Record<string, unknown>
+    | string
+    | number
+    | (string | number)[];
+
 declare global {
     interface Window {
-        route: (name: string, params?: Record<string, any>) => string;
+        route: (name: string, params?: RouteParams) => string;
     }
 }
 
 // Type for route names
-export type RouteName = 
+export type RouteName =
     | 'dashboard'
     | 'login'
     | 'register'
@@ -17,7 +23,7 @@ export type RouteName =
     | 'logout';
 
 // Type-safe route function that wraps Ziggy's route function
-export function route(name: RouteName, params?: Record<string, any>): string {
+export function route(name: RouteName, params?: RouteParams): string {
     if (typeof window === 'undefined') {
         throw new Error('route() function must be called in browser context');
     }
