@@ -1,9 +1,9 @@
+import HeroImage from "@/assets/logo-new.png";
+import Produk1 from "@/assets/Produk1.jpg";
+import Produk2 from "@/assets/Produk2.jpg";
+import Produk3 from "@/assets/Produk3.jpg";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import HeroImage from "../../assets/logo-new.png";
-import Produk1 from "../../assets/Produk1.jpg";
-import Produk2 from "../../assets/Produk2.jpg";
-import Produk3 from "../../assets/Produk3.jpg";
 
 // 1. Definisikan tipe untuk sebuah objek produk
 interface Product {

@@ -4,7 +4,7 @@ import logo from '@/assets/logonav.png'; // Pastikan path ini benar
 
 interface Props {
     children: ReactNode;
-    title: string; // <-- 'title' sekarang wajib ada
+    title: string;
 }
 
 export default function GuestLayout({ children, title }: Props) {

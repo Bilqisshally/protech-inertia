@@ -1,5 +1,5 @@
+import komponen from "@/assets/komponen.jpg";
 import React from 'react';
-import komponen from "../../assets/komponen.jpg";
 
 const Tentang: React.FC = () => {
     return (
