@@ -1,7 +1,6 @@
 import { Icon } from '@iconify/react';
 import React, { useState } from 'react'; // Impor React untuk tipe
 import { useNavigate } from 'react-router-dom';
-// Asumsi Anda sudah mendefinisikan tipe untuk CartContext
 import { CartItem, useCart } from '../../context/CartContext';
 
 // 1. Definisikan tipe untuk objek form data

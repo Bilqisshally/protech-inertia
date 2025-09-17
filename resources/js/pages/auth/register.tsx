@@ -1,6 +1,7 @@
 import GuestLayout from '@/layouts/GuestLayout';
 import { Head, Link, useForm } from '@inertiajs/react';
 import React, { useEffect } from 'react';
+import { route } from 'ziggy-js';
 
 export default function Register() {
     const { data, setData, post, processing, errors, reset } = useForm({
@@ -50,4 +51,6 @@ export default function Register() {
     );
 }
 
-Register.layout = page => <GuestLayout>{page}</GuestLayout>;
+Register.layout = (page: React.ReactNode) => (
+  <GuestLayout title="Register">{page}</GuestLayout>
+);

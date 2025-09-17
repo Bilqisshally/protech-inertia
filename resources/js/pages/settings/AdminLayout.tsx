@@ -1,7 +1,7 @@
 import { Head, Link } from '@inertiajs/react';
 import { ReactNode } from 'react';
 import { route } from 'ziggy-js';
-import logo from '../assets/logonav.png'; // Pastikan path ke logo Anda sudah benar
+import logo from '../assets/logonav.png';
 
 // Definisikan tipe untuk props yang akan diterima oleh layout ini
 interface Props {
