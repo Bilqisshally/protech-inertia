@@ -1,5 +1,5 @@
 import React from 'react';
-import AdminLayout from '@/layouts/AdminLayout';
+import AdminLayout from '@/layouts/admin-layout';
 
 export default function User() {
     return (

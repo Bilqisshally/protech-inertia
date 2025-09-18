@@ -1,7 +1,7 @@
-import GuestLayout from '@/layouts/GuestLayout';
+import GuestLayout from '@/layouts/guest-layout';
 import { Head, Link, useForm } from '@inertiajs/react';
 import React, { useEffect } from 'react';
-import { route } from 'ziggy-js';
+import { login } from '@/routes';
 
 export default function Register() {
     const { data, setData, post, processing, errors, reset } = useForm({
@@ -15,7 +15,7 @@ export default function Register() {
 
     const submit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        post(route('register'));
+        // login();
     };
 
     return (
@@ -42,7 +42,7 @@ export default function Register() {
                 {errors.password_confirmation && <div className="text-red-600 text-sm mt-1">{errors.password_confirmation}</div>}
             </div>
             <div className="flex items-center justify-end mt-4">
-                <Link href={route('login')} className="underline text-sm text-gray-600 hover:text-gray-900">Sudah punya akun?</Link>
+                <Link href={login()} className="underline text-sm text-gray-600 hover:text-gray-900">Sudah punya akun?</Link>
                 <button type="submit" className="ml-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700" disabled={processing}>
                     {processing ? 'Loading...' : 'Register'}
                 </button>
